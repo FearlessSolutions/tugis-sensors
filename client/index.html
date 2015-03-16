@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tugis sensors</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--load bootstrap for responsiveness-->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/lib/simple-sidebar.css" />
+	<!-- load leaflet style-->
+	<link rel="stylesheet" href="css/lib/leaflet.css" />
+
+	<!-- load overrides -->
+	<link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+	<div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        tugis sensor fun
+                    </a>
+                </li>
+				<h3>stuff goes here</h3>
+            </ul>
+        </div>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						<div class="nav-buttons">
+							<div id="zoomIn">
+								-
+							</div>
+							<div id="zoomOut">
+								+
+							</div>
+							<div id="menu-toggle">
+								menu
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <div id="map"></div>
+    <!-- /#wrapper -->
+	<!-- load required libraries -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/lib/leaflet.min.js"></script>
+
+	<!-- custom functionality -->
+	<script src="js/map.js"></script>
+
+    <script>
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
+    </script>
+</body>
+</html>

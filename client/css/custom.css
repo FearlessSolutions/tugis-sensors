@@ -1,0 +1,33 @@
+body, html, .wrapper, #map {
+	height: 100%;
+	width: 100%;
+}
+
+body, html {	
+	padding: 0;
+	margin: 0;
+}
+
+#page-content-wrapper, .col-lg-12 {
+	padding: 0;
+	position: absolute;
+}
+
+#sidebar-wrapper, .nav-buttons, #zoomIn, #zoomOut, #menu-toggle{
+	opacity: .8;
+}
+
+.nav-buttons {
+	width: 30px;
+	background-color: black;
+}
+
+.col-lg-12 {
+	z-index: 9999;
+}
+
+#zoomIn, #zoomOut, #menu-toggle {
+	color: white;
+	height: 30px;
+    border-bottom: 1px solid white;
+}
