@@ -38,6 +38,8 @@ var sensorLayer = L.geoJson(sensordata, {
         }
     }).addTo(map);
 
+
+// Randomized data sample for TUgis
 setTimeout(function(){
 	var colors = [['#e4ff01', 8], ['#ffe401', 8], ['#ffa201', 14], ['#ff7301', 16], ['#ff4901', 18], ['#ff0101', 20]];
 	map.removeLayer(sensorLayer);
@@ -50,7 +52,7 @@ setTimeout(function(){
 	        	return L.circleMarker(latlng, {
 				    radius: sdaf[1],
 				    fillColor: sdaf[0],
-				    color: "white",
+				    color: "transparent",
 				    weight: 1,
 				    opacity: 1,
 				    fillOpacity: 0.8
