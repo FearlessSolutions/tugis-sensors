@@ -1,6 +1,6 @@
 var map = L.map('map', {
 	zoomControl: false
-}).setView([39.290365, -76.615220], 13);
+}).setView([39.282365, -76.615220], 15);
 
 L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
 	maxZoom: 18,
@@ -20,3 +20,18 @@ $("#zoomOut").click(function(e) {
     e.preventDefault();
     map.zoomOut();
 });
+
+var geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "grey",
+    color: "white",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
+var sensorLayer = L.geoJson(sensordata, {
+		pointToLayer: function (feature, latlng) {
+        	return L.circleMarker(latlng, geojsonMarkerOptions);
+        }
+    }).addTo(map);

@@ -1,0 +1,33 @@
+var sensordata = {  
+   "type":"FeatureCollection",
+   "features":[  
+      {  
+         "type":"Feature",
+         "properties":{  
+            "sensorID":"1",
+            "name":"Matts House"
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               -76.611797,
+               39.290338
+            ]
+         }
+      },
+      {  
+         "type":"Feature",
+         "properties":{  
+            "sensorID":"2",
+            "name":"Hogan House"
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               -76.603176,
+               39.273535
+            ]
+         }
+      }
+   ]
+}
