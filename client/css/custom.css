@@ -3,7 +3,7 @@ body, html, .wrapper, #map {
 	width: 100%;
 }
 
-body, html {	
+body, html {
 	padding: 0;
 	margin: 0;
 }
@@ -14,20 +14,50 @@ body, html {
 }
 
 #sidebar-wrapper, .nav-buttons, #zoomIn, #zoomOut, #menu-toggle{
-	opacity: .8;
+	opacity: 1;
+	background-color: #222;
+
+}
+.sidebar-nav .sidebar-brand a{
+	color:#fff;
+}
+#sidebar-wrapper .stuff{
+	padding:1em;
+}
+.accordion-inner{
+	color:#ccc;
+	padding-left:2.5em;
+}
+#sidebar-wrapper .accordion-toggle{
+	color:#fff;
+	text-decoration:none;
+	font-size:14pt;
+}
+
+#sidebar-wrapper .accordion-toggle i{
+	width:1.5em;
+	text-align:left;
+
 }
 
 .nav-buttons {
-	width: 30px;
-	background-color: black;
+	background-color: #222;
 }
-
+.nav-buttons i{
+	display:block;
+	padding:10px;
+	color:#666;
+	font-size:18pt;
+}
+.nav-buttons i:hover{
+	color:#fff;
+	cursor:pointer;
+}
 .col-lg-12 {
 	z-index: 9999;
 }
 
 #zoomIn, #zoomOut, #menu-toggle {
 	color: white;
-	height: 30px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #333;
 }
