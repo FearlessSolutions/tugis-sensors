@@ -42,6 +42,7 @@ body, html {
 
 .nav-buttons {
 	background-color: #222;
+	width: 45px;
 }
 .nav-buttons i{
 	display:block;
