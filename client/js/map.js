@@ -35,3 +35,31 @@ var sensorLayer = L.geoJson(sensordata, {
         	return L.circleMarker(latlng, geojsonMarkerOptions);
         }
     }).addTo(map);
+
+var turnOffAll = function(){
+	$('#temp').find('i').removeClass('act');
+	$('#humidity').find('i').removeClass('act');
+	$('#sound').find('i').removeClass('act');
+	$('#light').find('i').removeClass('act');
+
+};
+
+$('#temp').click(function(){ turnOffAll();
+	$(this).find('i').toggleClass('act');
+
+});
+
+$('#humidity').click(function(){ turnOffAll();
+	$(this).find('i').toggleClass('act');
+
+});
+
+$('#sound').click(function(){ turnOffAll();
+	$(this).find('i').toggleClass('act');
+
+});
+
+$('#light').click(function(){ turnOffAll();
+	$(this).find('i').toggleClass('act');
+
+});

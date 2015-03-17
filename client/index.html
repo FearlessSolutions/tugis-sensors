@@ -35,59 +35,87 @@
                     </a>
                 </li>
 				<div class="stuff">
-					<div class="accordion" id="accordion2">
+					<div  id="accordion2">
 					  <div class="accordion-group">
 					    <div class="accordion-heading">
-					      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-							<i class="fa fa-tachometer"></i> Temperature
+					      <a class="accordion-toggle" data-parent="#accordion2" id="temp">
+							<i class="fa fa-tachometer active"></i> Temperature
 					      </a>
 					    </div>
-					    <div id="collapseOne" class="accordion-body collapse">
+					    <div id="collapseOne" class="accordion-body collapse in">
 					      <div class="accordion-inner">
 							<label class="checkbox-inline">
-								<input type="checkbox" checked data-toggle="toggle"> on / off
+								<ul class="index">
+									<li>&lt;0 - 10</li>
+									<li>10 - 30</li>
+									<li>30 - 50</li>
+									<li>50 - 70</li>
+									<li>70 - 90</li>
+									<li>90 - 110</li>
+								</ul>
 							</label>
 					      </div>
 					    </div>
 					  </div>
 					  <div class="accordion-group">
 					    <div class="accordion-heading">
-					      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+					      <a class="accordion-toggle"  data-parent="#accordion2" id="humidity">
 							<i class="fa fa-tint"></i> Humidity
 					      </a>
 					    </div>
-					    <div id="collapseTwo" class="accordion-body collapse">
+					    <div id="collapseTwo" class="accordion-body collapse in">
 					      <div class="accordion-inner">
 							<label class="checkbox-inline">
-								<input type="checkbox" checked data-toggle="toggle"> on / off
+								<ul class="index">
+									<li style="color:#01fffc;">0%</li>
+									<li style="color:#01deff">10% - 30%</li>
+									<li style="color:#0196ff">30% - 50%</li>
+									<li style="color:#0167ff">50% - 70%</li>
+									<li style="color:#0119ff">70% - 90%</li>
+									<li style="color:#2b01ff">90% - 100%</li>
+								</ul>
 							</label>
 					      </div>
 					    </div>
 					  </div>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+							<a class="accordion-toggle" data-parent="#accordion3" id="sound">
 								<i class="fa fa-bullhorn"></i> Sound
 							</a>
 						</div>
-						<div id="collapseThree" class="accordion-body collapse">
+						<div id="collapseThree" class="accordion-body collapse in">
 							<div class="accordion-inner">
 								<label class="checkbox-inline">
-									<input type="checkbox" checked data-toggle="toggle"> on / off
+									<ul class="index">
+										<li style="color:#e4ff01">&lt;10db</li>
+										<li style="color:#ffe401">10db - 30db</li>
+										<li style="color:#ffa201">60db - 100db</li>
+										<li style="color:#ff7301">100db - 140db</li>
+										<li style="color:#ff4901">140db - 280db</li>
+										<li style="color:#ff0101">280db - &gt;300db</li>
+									</ul>
 								</label>
 							</div>
 						</div>
 					</div>
 					<div class="accordion-group">
 						<div class="accordion-heading">
-							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
+							<a class="accordion-toggle" data-parent="#accordion4" id="light">
 								<i class="fa fa-lightbulb-o"></i> Light
 							</a>
 						</div>
-						<div id="collapseFour" class="accordion-body collapse">
+						<div id="collapseFour" class="accordion-body collapse in">
 							<div class="accordion-inner">
 								<label class="checkbox-inline">
-									<input type="checkbox" checked data-toggle="toggle"> on / off
+									<ul class="index">
+										<li>&lt;0lu - 10lu</li>
+										<li>10lu - 30lu</li>
+										<li>30lu - 50lu</li>
+										<li>50lu - 70lu</li>
+										<li>70lu - 90lu</li>
+										<li>90lu - 110lu</li>
+									</ul>
 								</label>
 							</div>
 						</div>
