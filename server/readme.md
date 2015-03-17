@@ -85,3 +85,22 @@ INSERT INTO sensors (date, sensorID, temp, humidity, light, sound) VALUES
 	(to_timestamp(1426557525797), '2', '0','0','0','0'),
 	(to_timestamp(1426557525797), '3', '0','0','0','0')
 ```
+
+
+install nginx
+```
+sudo apt-get install nginx
+```
+
+then configure a proxy from port 3000 (the nodejs port we are using), and port 80, the standard port.
+
+Now install git.
+
+```
+sudo apt-get install git-core
+```
+
+clone down the repo
+```
+git clone https://github.com/FearlessSolutions/tugis-sensors.git
+```
