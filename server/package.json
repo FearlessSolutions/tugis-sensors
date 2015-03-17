@@ -1,0 +1,13 @@
+{
+  "name": "tugis-sensors",
+  "description": "sensors fucking rock",
+  "main": "server",
+  "author": "chris hogan & matt wisniewski",
+  "homepage": "https://github.com/fearlesssolutions/tugis-sensors/server",
+  "dependencies": {
+    "express": "4.x",
+    "body-parser":"latest",
+    "corser": "latest",
+    "pg": "latest"
+  }
+}
