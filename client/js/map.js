@@ -22,7 +22,7 @@ $("#zoomOut").click(function(e) {
 });
 
 var geojsonMarkerOptions = {
-    radius: 8,
+    radius: 18,
     fillColor: "grey",
     color: "white",
     weight: 1,
@@ -30,11 +30,36 @@ var geojsonMarkerOptions = {
     fillOpacity: 0.8
 };
 
+
+
 var sensorLayer = L.geoJson(sensordata, {
 		pointToLayer: function (feature, latlng) {
         	return L.circleMarker(latlng, geojsonMarkerOptions);
         }
     }).addTo(map);
+
+setTimeout(function(){
+	var colors = [['#e4ff01', 8], ['#ffe401', 8], ['#ffa201', 14], ['#ff7301', 16], ['#ff4901', 18], ['#ff0101', 20]];
+	map.removeLayer(sensorLayer);
+	console.log(colors[Math.floor(Math.random() * colors.length)]);
+	geojsonMarkerOptions.fillColor = colors[Math.floor(Math.random() * colors.length )];
+
+	sensorLayer = L.geoJson(sensordata, {
+			pointToLayer: function (feature, latlng) {
+				var sdaf = colors[Math.floor(Math.random() * colors.length )];
+	        	return L.circleMarker(latlng, {
+				    radius: sdaf[1],
+				    fillColor: sdaf[0],
+				    color: "white",
+				    weight: 1,
+				    opacity: 1,
+				    fillOpacity: 0.8
+				});
+	        }
+	    }).addTo(map);
+
+	setTimeout(arguments.callee, 1000);
+}, 1000);
 
 var turnOffAll = function(){
 	$('#temp').find('i').removeClass('act');

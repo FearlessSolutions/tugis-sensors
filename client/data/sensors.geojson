@@ -1,33 +1,75 @@
-var sensordata = {  
+var sensordata = {
    "type":"FeatureCollection",
-   "features":[  
-      {  
+   "features":[
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "sensorID":"1",
             "name":"Matts House"
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -76.611797,
                39.290338
             ]
          }
       },
-      {  
+      {
          "type":"Feature",
-         "properties":{  
+         "properties":{
             "sensorID":"2",
             "name":"Hogan House"
          },
-         "geometry":{  
+         "geometry":{
             "type":"Point",
-            "coordinates":[  
+            "coordinates":[
                -76.603176,
                39.273535
             ]
          }
-      }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "sensorID":"3",
+            "name":"Hogan Other House"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+                -76.608436,
+                39.285714
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "sensorID":"4",
+            "name":"Hogan House"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+                -76.617931,
+                39.286395
+            ]
+         }
+     },
+     {
+        "type":"Feature",
+        "properties":{
+           "sensorID":"5",
+           "name":"Hogan House"
+        },
+        "geometry":{
+           "type":"Point",
+           "coordinates":[
+               -76.608372,
+               39.279635
+           ]
+        }
+     }
    ]
 }
